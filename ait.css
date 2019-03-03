@@ -83,20 +83,34 @@
     margin: 0px auto 10px auto;
     display: block;
   }
-}
-@media (max-width: 992px) {
-#left-one {
+  #left-one {
+	display:none;
+	}
+  #right-one {
+		display:none;
+	}
+  #mid-one{
+		display: block;
+		max-width :100%;
+		padding:0px;
+	}
 	
+}
+@media (max-width: 992px) and (min-width:600px) {
+	
+	#right-one {
 	display:none;
+	}
+	 #mid-one{
+		display: block;
+		max-width :100%;
+	}
+	  #left-one {
+	max-width:30%;
+	}
+
 }
-#right-one {
-	display:none;
-}
-#mid-one{
-	display: block;
-	max-width :100%;
-	padding:0px;
-}
+
 
 
 @media (max-width: 1200px) and (min-width:992px) {
